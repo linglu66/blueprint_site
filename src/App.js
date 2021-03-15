@@ -1,25 +1,73 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import AOS from 'aos';
 
-function App() {
+
+import Home from './Home.js'
+import Team from './components/Team/Team.js'
+import Chapters from './components/Chapters/Chapters.js'
+import Apply from './components/Apply/Apply.js'
+import './App.css';
+import './style.css'
+import logo from './imgs/logo.png'
+
+AOS.init( {offset: 20})
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+
+<nav class='bg-grey'>
+      <div class='margin' id="navContent">
+          <Link activeClassName='activeLink' to="/">
+            <img src ={logo} height='30px' id="navLogo"/> 
+          </Link>
+          <ul id="navLinkContainer">
+
+              <Link className='navLink' to='/team'><li>Team</li></Link>
+              <Link class='navLink' to='/chapters'>
+                  <li>Chapters</li>
+              </Link>
+              <Link class='navLink' to='/apply'>
+                  <li>Apply</li>
+              </Link>
+          </ul>
+      </div>
+        <Switch>
+          <Route path="/team">
+            <Team />
+          </Route>
+          <Route path="/chapters">
+            <Chapters />
+          </Route>
+          <Route path="/apply">
+            <Apply />
+          </Route>
+          
+          
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+    </nav>
+
+    </Router>
   );
 }
 
-export default App;
+// function Home() {
+//   return <h2>Home</h2>;
+// }
+
+// function About() {
+//   return <h2>About</h2>;
+// }
+
+// function Users() {
+//   return <h2>Users</h2>;
+// }

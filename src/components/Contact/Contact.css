@@ -1,0 +1,16 @@
+.contact{
+    width:100%;
+    /* height:200px; */
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+.contact p {
+    width:40%;
+}
+
+#contactBtn{
+    background-color: white;
+    text-decoration: none;
+}
+
