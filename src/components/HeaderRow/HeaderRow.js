@@ -26,8 +26,8 @@ export default function HeaderRow({title,body,img=1, width, btn = false,} ) {
                 {width=="med"?
                 <p className='headerBody wider'>{body}</p>:<p className='headerBody'>{body}</p> }
                 {btn != false? 
-                    <div><Link to="https://airtable.com/shrdHegbtWin83R69" className="headerBtn">Apply</Link> 
-                    <Link to="http://bit.ly/uoftbp-rec-info" className="headerBtn">More Info</Link></div>:
+                    <div><a href="https://airtable.com/shrdHegbtWin83R69" target = '_blank' className="headerBtn">Apply</a> 
+                    <a href="http://bit.ly/uoftbp-rec-info" target = '_blank' className="headerBtn">More Info</a></div>:
                     null}
                 </div>
                 

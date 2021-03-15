@@ -35,3 +35,17 @@
 .headerBtn:hover{
     color:white;
 }
+
+
+@media screen and (max-width: 1024px){
+    #headerText{
+        top:120px;
+    }
+
+    .headerBody, #headerTitle{
+        width:50%;
+        margin-left:px;
+        
+    }
+    
+}

@@ -203,3 +203,28 @@ Nav{
 .cardText p{
     font-size:14px;
 }
+
+@media screen and (max-width: 1024px){
+    .margin{
+        max-width:800px;
+    }
+
+    #intro{
+        position: absolute;
+        top: 250px;
+        left: 15vw;
+        width:45%;
+    
+      }
+
+    #introHead{
+        font-size:36px;
+    }
+
+    #mission{
+        bottom:100px;
+        left: 15vw;
+        position: absolute;
+        color:lightyellow;
+      } 
+}
