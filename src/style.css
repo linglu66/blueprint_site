@@ -210,6 +210,23 @@ Nav{
     font-size:14px;
 }
 
+/* Mobile placeholder */
+
+#mobilePlaceholder{
+    margin:20px 30px;
+    /* border:1px solid green; */
+
+}
+
+.underConstruction{
+    margin-top:50%;
+}
+
+.underConstruction h2{
+    font-size:1.5em;
+    margin-bottom:30px;
+}
+
 @media screen and (max-width: 1024px){
     .margin{
         max-width:800px;

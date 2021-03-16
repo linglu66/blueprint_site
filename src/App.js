@@ -15,14 +15,17 @@ import Apply from './components/Apply/Apply.js'
 import './App.css';
 import './style.css'
 import logo from './imgs/logo.png'
+import wip from './imgs/wip.png'
 
 AOS.init( {offset: 20})
 
 export default function App() {
   return (
+    <div>
+    {window.innerWidth > 700? (
     <Router>
-
-<nav class='bg-grey'>
+    
+    <nav class='bg-grey'>
       <div class='margin' id="navContent">
           <Link activeClassName='activeLink' to="/">
             <img src ={logo} height='30px' id="navLogo"/> 
@@ -56,7 +59,20 @@ export default function App() {
         </Switch>
     </nav>
 
-    </Router>
+    </Router>) : (<div id="mobilePlaceholder">
+      <img src={logo} width="30%"/>
+
+        <div className="underConstruction">
+          <div data-aos ="fade-right">
+          <h2>Our mobile website is still under construction!</h2>
+          <h2>In the meantime, feel free to visit us on a desktop device 🙂</h2></div>
+          <img src={wip} width="100%"/>
+
+
+        </div>
+
+    </div>)}
+    </div>
   );
 }
 
