@@ -71,6 +71,35 @@ export default function App() {
 
         </div>
 
+        <div className='links'>
+        <div className="col">
+                        <h4>say hello</h4>
+                        <ul className="list-unstyled">
+                            <li>
+                                <a target="_blank" href="https://facebook.com/uoftblueprint" style={{ color: '#FFF' }} rel="noreferrer">
+                                facebook
+                                </a>
+                                </li>
+                            <li><a target="_blank" href="https://instagram.com/uoftblueprint" style={{ color: '#FFF' }} rel="noreferrer">
+                                instagram
+                                </a>
+                                </li>
+                            {/* <li><a target="_blank" href="" style={{ color: '#FFF' }}>
+                                twitter
+                                </a>
+                                </li>  */}
+                            <li><a target="_blank" href="https://linkedin.com/company/uoftblueprint" style={{ color: '#FFF' }} rel="noreferrer">
+                                linkedin
+                                </a>
+                                </li> 
+                            {/* <li><a target="_blank" href="" style={{ color: '#FFF' }}>
+                                medium
+                                </a>
+                                </li> */}
+                        </ul>
+                    </div>
+          </div>
+
     </div>)}
     </div>
   );
