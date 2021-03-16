@@ -37,8 +37,7 @@ const Home = () => {
             <div class="textContent"  data-aos="fade-right" 
              data-aos-offset="10">
                 <h2>Our Projects</h2>
-                <p>Each year, teams of five students work with non-profit organizations 
-                    on projects to help them better serve their communities. </p>
+                <p>Projects that we’ve collaborated on with some amazing organizations.</p>
                 
             </div>
             <div class="cards">
