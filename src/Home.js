@@ -14,10 +14,12 @@ import Contact from './components/Contact/Contact'
 
 
 const Home = () => {
+    // var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     return(
-
+   
     <div>
-    
+     { window.innerWidth > 700 ? (
+         <div>
     <div id='hero'>
         <img src={hero} alt="Snow" width="100%"/>
 
@@ -152,6 +154,9 @@ const Home = () => {
     </div>
     <Contact/>
     <Footer/>
+    </div>
+        ) : 
+        (<div>sorry temp</div>)}
 
     </div>
 
