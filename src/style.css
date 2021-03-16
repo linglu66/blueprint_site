@@ -213,13 +213,17 @@ Nav{
 /* Mobile placeholder */
 
 #mobilePlaceholder{
-    margin:20px 30px;
+    padding:20px 30px;
     /* border:1px solid green; */
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height:100vh;
 
 }
 
 .underConstruction{
-    margin-top:50%;
+
 }
 
 .underConstruction h2{
