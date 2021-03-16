@@ -108,13 +108,19 @@ Nav{
 }
 /* Cards */
 .card-home{
-    max-width: 31%;
+    width: 31%;
     background-color: white;
     border-radius: 10px;
     color: #333333;
+    transition: ease-out 0.3s;
+
     
 }
 
+.card-home:hover{
+    /* width:35%; */
+    transform: translate(10px, 10px);
+}
 .cardText{
     padding:30px;
     text-transform: none;

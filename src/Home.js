@@ -43,7 +43,7 @@ const Home = () => {
             </div>
             <div class="cards">
               
-                <a href="" class='card-home'>
+                <a href="https://meritaward.ca/"  target ="_blank"class='card-home'>
                     <img src={meritAward} width='100%'/>
 
                     <div class="cardText">
@@ -56,7 +56,7 @@ const Home = () => {
                     </div>
                 
                 </a>
-                <a href="" class='card-home'>
+                <a href="https://www.onecityfund.com/" target ="_blank" class='card-home'>
                     <img src={oneCity} width='100%'/>
                     <div class="cardText">
                     
@@ -69,7 +69,7 @@ const Home = () => {
                     </div>
                 
                 </a>
-                <a href="" class='card-home'>
+                <div href="" class='card-home'>
                     <img src={shelterMovers} width='100%'/>
 
                     <div class="cardText">
@@ -79,7 +79,7 @@ const Home = () => {
                             <br/>
                            This project is under NDA to ensure safety of their clients.</p>
                     </div>
-                </a>
+                </div>
             </div>
             </div>
         </div>
